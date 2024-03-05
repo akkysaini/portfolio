@@ -98,6 +98,6 @@ export const skillsData = [
   "Express",
   "Framer Motion",
   "Wordpress",
-  "Shopify",
   "Elementor",
+  "Shopify",
 ] as const;

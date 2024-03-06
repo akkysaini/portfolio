@@ -12,7 +12,7 @@ import { HiDownload } from 'react-icons/hi';
 
 export default function Intro() {
   return (
-    <section className='mb-28 max-w-[50rem] text-center'>
+    <section className=' max-w-[50rem] text-center'>
         <div className="flex items-center justify-center">
             <div className='relative'>
             <motion.div
@@ -43,7 +43,7 @@ export default function Intro() {
             </motion.span>
             </div>
         </div>
-        <motion.p
+        <motion.h1
         className="mb-10 mt-4 px-4 text-2xl  !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ export default function Intro() {
         <span className="font-bold">1.5 years</span> of experience. I enjoy
         building <span className="italic">websites</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
@@ -64,7 +64,7 @@ export default function Intro() {
         }}
       >
         <a
-          className="group  bg-gray-800 text-white hover:bg-gray-950 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack "
+          className="group  bg-gray-700 text-white hover:bg-gray-950 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer "
           href="/CV.pdf"
           download
         >
@@ -73,7 +73,7 @@ export default function Intro() {
         </a>
         <Link
           href="#contact"
-          className="group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition dark:bg-white/10"
+          className="group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition dark:bg-white/10 border border-black/10"
         //   onClick={() => {
         //     setActiveSection("Contact");
         //     setTimeOfLastClick(Date.now());
@@ -83,9 +83,9 @@ export default function Intro() {
           
         </Link>
 
-        <div className="flex items-center border border-red justify-center gap-3">
+        <div className="flex items-center justify-center gap-3">
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/akash-saini-312496226"
           target="_blank"
         >
@@ -93,7 +93,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
           href="https://github.com/akkysaini"
           target="_blank"
         >

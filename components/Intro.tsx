@@ -12,7 +12,7 @@ import { HiDownload } from 'react-icons/hi';
 
 export default function Intro() {
   return (
-    <section className=' max-w-[50rem] text-center'>
+    <section className=' max-w-[50rem] text-center scroll-mt-32' id='home'>
         <div className="flex items-center justify-center">
             <div className='relative'>
             <motion.div

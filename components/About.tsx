@@ -6,11 +6,11 @@ import SectionHeading from "./SectionHeading";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About" , 0.5);
+  const { ref } = useSectionInView("About");
   return (
     <motion.section
       ref={ref}
-      className=" max-w-[45rem] text-center leading-8  scroll-mt-28"
+      className="mb-10 sm:mb-20 max-w-[45rem] text-center leading-8  scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -23,7 +23,7 @@ export default function About() {
         <span className="font-medium"> frontend web development</span>.
         <span className="italic"> My favorite part of coding</span> is creating a responsive and visually stunning website. I <span className="underline">love</span> the
         feeling of figuring out a solution to the errors in a website. My core skills are<span className="font-medium"> HTML, CSS, JavaScript and Wordpress</span>
-        . I am also familiar with <span className="font-medium"> React, Next.js </span>and othe<span className="italic"> CSS frameworks </span>like<span className="font-medium"> Tailwind CSS </span>and<span className="font-medium"> Bootstrap</span>. I am currently looking for a<span className="font-medium"> full-time position </span>as a frontend
+        . I am also familiar with <span className="font-medium"> React, Next.js </span>and other<span className="italic"> CSS frameworks </span>like<span className="font-medium"> Tailwind CSS </span>and<span className="font-medium"> Bootstrap</span>. I am currently looking for a<span className="font-medium"> full-time position </span>as a frontend
         developer.
       </p>
       <p className="mb-3 text-justify">

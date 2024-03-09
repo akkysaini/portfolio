@@ -24,7 +24,7 @@ export default function Skills() {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <section id='skills' ref={ref} className='mb-10 sm:mb-20 max-w-[53rem] scroll-mt-28 text-center'>
+    <section id='skills' ref={ref} className='mb-10 sm:mb-28 max-w-[53rem] scroll-mt-28 text-center'>
         <SectionHeading>My skills</SectionHeading>
         <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
             {
@@ -36,7 +36,7 @@ export default function Skills() {
                     viewport={{once: true,}}
                     custom={index}
                     key={index}
-                    className='bg-white border border-black/[0.1] rounded-xl px-5 py-3'
+                    className='bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80'
                     >{skill}</motion.li>
                 ))
             }  

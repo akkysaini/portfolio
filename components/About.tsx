@@ -42,10 +42,10 @@ export default function About() {
         My journey in the world of web development has been one of continuous
         <span className="italic"> learning and growth</span>, and I am always
         excited to take on new challenges. As you
-        <span className="font-medium"> explore my portfolio</span>, you'll find
+        <span className="font-medium"> explore my portfolio</span>, you will find
         a showcase of projects that highlight my expertise. I take pride in
         delivering projects that not only meet client expectations but also
-        exceed them. Let's collaborate and bring your digital vision to life
+        exceed them. Let us collaborate and bring your digital vision to life
         with innovation and precision. Thank you for visiting !
       </p>
     </motion.section>

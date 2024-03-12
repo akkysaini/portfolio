@@ -18,7 +18,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3 text-justify">
-        After completing graduation in<span className="font-medium"> B.A</span>,
+        During my graduation in<span className="font-medium"> BA 2nd Year</span>,
         I decided to pursue my passion for programming. I enrolled in a coding
         course and learned
         <span className="font-medium"> frontend web development</span>.

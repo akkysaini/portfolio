@@ -1,10 +1,13 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaWordpress } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+
+
+// For Navbar menus
 
 export const links = [
   {
@@ -35,28 +38,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduation and Learnings",
+    // location: "Miami, FL",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "During graduation I worked as a freelancer and delivered many websites based on wordpress.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2022",
+  },
+  {
+    title: "Front-End Developer Intern",
+    location: "CareerGuide.com",
+    description:
+      "In my internship at careerguide.com as a frontend developer, I elevated their own website's UI and gained more experience in wordpress and php.",
+    icon: React.createElement(FaWordpress),
+    date: "2022 - 2023",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Brandent",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "After internship transitioning into a full-time role at Brandent. I've successfully developed and delivered numerous websites, including ecommerce platforms utilizing Wordpress and Shopify. I'm open to full-time opportunities.",
+    icon: React.createElement(RiJavascriptFill),
+    date: "2023 - present",
   },
 ] as const;
 

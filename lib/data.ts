@@ -39,7 +39,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "Graduation and Learnings",
-    // location: "Miami, FL",
+    location: "",
     description:
       "During graduation I worked as a freelancer and delivered many websites based on wordpress.",
     icon: React.createElement(LuGraduationCap),
@@ -49,7 +49,7 @@ export const experiencesData = [
     title: "Front-End Developer Intern",
     location: "CareerGuide.com",
     description:
-      "In my internship at careerguide.com as a frontend developer, I elevated their own website's UI and gained more experience in wordpress and php.",
+      "In my internship at careerguide.com as a frontend developer, I elevated their own website UI and gained more experience in wordpress and php.",
     icon: React.createElement(FaWordpress),
     date: "2022 - 2023",
   },
@@ -57,7 +57,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "Brandent",
     description:
-      "After internship transitioning into a full-time role at Brandent. I've successfully developed and delivered numerous websites, including ecommerce platforms utilizing Wordpress and Shopify. I'm open to full-time opportunities.",
+      "After internship transitioning into a full-time role at Brandent. I have successfully developed and delivered numerous websites, including ecommerce platforms utilizing Wordpress and Shopify. I am open to full-time opportunities.",
     icon: React.createElement(RiJavascriptFill),
     date: "2023 - present",
   },

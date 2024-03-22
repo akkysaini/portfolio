@@ -17,9 +17,9 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3 text-justify">
-        During my graduation in<span className="font-medium"> BA 2nd Year</span>,
-        I decided to pursue my passion for programming. I enrolled in a coding
+      <p className="mb-3 text-left sm:text-center">
+        During my graduation in<span className="font-medium"> BA 2nd Year</span>
+        , I decided to pursue my passion for programming. I enrolled in a coding
         course and learned
         <span className="font-medium"> frontend web development</span>.
         <span className="italic"> My favorite part of coding</span> is creating
@@ -38,12 +38,12 @@ export default function About() {
         for a<span className="font-medium"> full-time position </span>as a
         frontend developer.
       </p>
-      <p className="mb-3 text-justify ">
+      <p className="mb-3 text-left sm:text-center ">
         My journey in the world of web development has been one of continuous
         <span className="italic"> learning and growth</span>, and I am always
         excited to take on new challenges. As you
-        <span className="font-medium"> explore my portfolio</span>, you will find
-        a showcase of projects that highlight my expertise. I take pride in
+        <span className="font-medium"> explore my portfolio</span>, you will
+        find a showcase of projects that highlight my expertise. I take pride in
         delivering projects that not only meet client expectations but also
         exceed them. Let us collaborate and bring your digital vision to life
         with innovation and precision. Thank you for visiting !

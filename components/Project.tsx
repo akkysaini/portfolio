@@ -40,7 +40,7 @@ export default function Project({ title, tags, imageUrl, link }: ProjectProps) {
         {/* ======================Description============== */}
 
         <div className="p-4 w-[80%] flex flex-col items-center rounded z-[2] justify-center gap-2  absolute -bottom-[20%] bg-gray-200 dark:bg-gray-600">
-          <h3 className="text-xl">{title}</h3>
+          <h3 className="text-[1.25rem]">{title}</h3>
           <ul className="flex flex-wrap items-center justify-center mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li

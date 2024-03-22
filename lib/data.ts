@@ -2,9 +2,21 @@ import React from "react";
 import { FaWordpress } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import cyberzipImg from "@/public/cyberzip.png";
+import peachfloresImg from "@/public/peachflores.webp"
+import gargeeImg from "@/public/gargee.webp"
+import ekalblspImg from "@/public/ekalblsp.webp"
+import abrosImg from "@/public/abros.webp"
+import ninobambinoImg from "@/public/ninobambino.webp"
+import offbaseImg from "@/public/offbase.webp"
+import mehromaahImg from "@/public/mehromaah.webp"
+import evarherbsImg from "@/public/evaraherbs.webp"
+import pnamImg from "@/public/pnam.webp"
+import sqftImg from "@/public/21sqft.webp"
+import kaanchImg from "@/public/kaanch.webp"
+import growmoneyImg from "@/public/growmoney.webp"
+import amourImg from "@/public/amour.webp"
+import bluesparrowImg from "@/public/bluesparrow.webp"
 
 
 // For Navbar menus
@@ -20,7 +32,7 @@ export const links = [
   },
   {
     name: "Projects",
-    hash: "https://akashsaini.info",
+    hash: "#projects",
   },
   {
     name: "Skills",
@@ -65,26 +77,99 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    title: "Peach Flores",
+    tags: ["Shopify"],
+    imageUrl: peachfloresImg,
+    link: "https://peachflores.com/"
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    title: "Gargee Designer's",
+    tags: ["Shopify"],
+    imageUrl: gargeeImg,
+    link: "https://gargee.com/"
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    title: "CyberZip",
+    tags: ["Wordpress"],
+    imageUrl: cyberzipImg,
+    link: "https://cyberzip.in/"
   },
+  
+  {
+    title: "Ekal BLSP",
+    tags: ["Wordpress"],
+    imageUrl: ekalblspImg,
+    link: "https://ekalblspindia.org/"
+  },
+  {
+    title: "Abros Shoes",
+    tags: ["Shopify"],
+    imageUrl: abrosImg,
+    link: "https://abrosshoes.com/"
+  },
+  
+  {
+    title: "Nino Bambino",
+    tags: ["Shopify"],
+    imageUrl: ninobambinoImg,
+    link: "https://ninobambino.in/"
+  },
+  {
+    title: "Offbase",
+    tags: ["Wordpress"],
+    imageUrl: offbaseImg,
+    link: "https://offbase.in/"
+  },
+  {
+    title: "Mehrohmaah India",
+    tags: ["Shopify"],
+    imageUrl: mehromaahImg,
+    link: "https://mehromaahindia.com/"
+  },
+  {
+    title: "Grow Money",
+    tags: ["HTML"],
+    imageUrl: growmoneyImg,
+    link: "https://growmoneycapital.com/"
+  },
+  {
+    title: "Evara Herbs",
+    tags: ["Wordpress"],
+    imageUrl: evarherbsImg,
+    link: "https://evaraherbs.com/"
+  },
+  {
+    title: "PNAM Insights Solutions",
+    tags: ["Wordpress"],
+    imageUrl: pnamImg,
+    link: "https://pnam.co/"
+  },
+  {
+    title: "21 SQFT",
+    tags: ["Wordpress"],
+    imageUrl: sqftImg,
+    link: "https://21sqft.com/"
+  },
+  {
+    title: "Kaanch Luxe",
+    tags: ["Shopify"],
+    imageUrl: kaanchImg,
+    link: "https://kaanchluxe.in/"
+  },
+  {
+    title: "Bluesparrow Events",
+    tags: ["Wordress"],
+    imageUrl: bluesparrowImg,
+    link: "https://bluesparrowevents.in/"
+  },
+  {
+    title: "Amour Resort Wear",
+    tags: ["Wordress"],
+    imageUrl: amourImg,
+    link: "https://amourresortwear.com/"
+  },
+ 
+
 ] as const;
 
 export const skillsData = [

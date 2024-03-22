@@ -3,64 +3,63 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { projectsData } from "@/lib/data";
+// import { link } from "fs";
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({
-  title,
-  description,
-  tags,
-  imageUrl,
-}: ProjectProps) {
+export default function Project({ title, tags, imageUrl, link }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  // const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
     <motion.div
-      className=" group  mb-3 sm:mb-8 last:mb-0"
+      className="group lg:w-[32%] sm:w-[48%] w-[100%] rounded dark:border-gray-500 border-[4px] border-gray-300 mb-12 sm:mb-16"
       style={{
         scale: scaleProgress,
-        opacity: opacityProgress,
+        // opacity: opacityProgress,
       }}
       ref={ref}
     >
-      <section className="rounded-lg sm:group-even:pl-8 bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]   hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full  sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {description}
-          </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+      <div className="   relative h-[18rem] sm:h-[22rem] cursor-pointer flex justify-center">
+        {/* ======================image============== */}
+
+        <div className="w-[100%] h-[100%] overflow-hidden">
+          <Image
+            className=" transition ease-in-out duration-700 object-cover  group-hover:bottom-0 z-0 "
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+          />
+        </div>
+
+        {/* ======================Description============== */}
+
+        <div className="p-4 w-[80%] flex flex-col items-center rounded z-[2] justify-center gap-2  absolute -bottom-[20%] bg-gray-200 dark:bg-gray-600">
+          <h3 className="text-xl">{title}</h3>
+          <ul className="flex flex-wrap items-center justify-center mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                className="bg-gray-500 px-3 py-1 text-[0.6rem] capitalize tracking-[2px] text-white rounded-full dark:text-white/70"
                 key={index}
               >
                 {tag}
               </li>
             ))}
           </ul>
+          <a
+            href={link}
+            target="_blank"
+            className="bg-gray-700 dark:bg-gray-100  text-white dark:text-gray-900 hover:bg-gray-950 px-4 py-2 tracking-[2px] text-[0.7rem] rounded-full outline-none hover:scale-110 transition cursor-pointer"
+          >
+            View Live
+          </a>
         </div>
-        <Image
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-even:right-[initial] 
-             group-even:-left-40 
-             group-hover:-translate-x-3  
-             group-hover:translate-y-3  
-             group-hover:-rotate-2 
-             group-even:group-hover:translate-x-3  
-             group-even:group-hover:translate-y-3  
-             group-even:group-hover:rotate-2 
-             group-hover:scale-105"
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-        />
-      </section>
+      </div>
     </motion.div>
   );
 }

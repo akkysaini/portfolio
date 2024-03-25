@@ -2,7 +2,7 @@ import React from "react";
 import { FaWordpress } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
-import cyberzipImg from "@/public/cyberzip.png";
+import grilliImg from "@/public/grilli.webp";
 import peachfloresImg from "@/public/peachflores.webp"
 import gargeeImg from "@/public/gargee.webp"
 import ekalblspImg from "@/public/ekalblsp.webp"
@@ -88,13 +88,7 @@ export const projectsData = [
     imageUrl: gargeeImg,
     link: "https://gargee.com/"
   },
-  {
-    title: "CyberZip",
-    tags: ["Wordpress"],
-    imageUrl: cyberzipImg,
-    link: "https://cyberzip.in/"
-  },
-  
+ 
   {
     title: "Ekal BLSP",
     tags: ["Wordpress"],
@@ -107,7 +101,12 @@ export const projectsData = [
     imageUrl: abrosImg,
     link: "https://abrosshoes.com/"
   },
-  
+  {
+    title: "Grilli Restuarant",
+    tags: ["HTML"],
+    imageUrl: grilliImg,
+    link: "https://akkysaini.github.io/grilli-restaurant/"
+  },
   {
     title: "Nino Bambino",
     tags: ["Shopify"],

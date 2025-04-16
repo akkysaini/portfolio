@@ -71,7 +71,15 @@ export const experiencesData = [
     description:
       "After internship transitioning into a full-time role at Brandent. I have successfully developed and delivered numerous websites, including ecommerce platforms utilizing Wordpress and Shopify. I am open to full-time opportunities.",
     icon: React.createElement(RiJavascriptFill),
-    date: "2023 - present",
+    date: "2023 - 2024",
+  },
+  {
+    title: "Web Developer (Team Lead)",
+    location: "Probey Services",
+    description:
+      "I am currently working as a Team Lead at Probey Services, continuing to build high-quality websites and leading development projects — and I’m open to full-time opportunities where I can keep growing and contributing.",
+    icon: React.createElement(RiJavascriptFill),
+    date: "2024 - present",
   },
 ] as const;
 

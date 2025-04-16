@@ -59,7 +59,7 @@ export default function Intro() {
         <span className="font-bold">frontend developer</span> with{" "}
         <span className="font-bold">2.5 years</span> of experience. I enjoy
         building <span className="italic">websites</span>. My focus is{" "}
-        <span className="underline">Wordpress</span>.
+        <span className="underline">Frontend Development</span>.
       </motion.h1>
 
       <motion.div
@@ -72,7 +72,7 @@ export default function Intro() {
       >
         <a
           className="group  bg-gray-700 text-white hover:bg-gray-950 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer "
-          href="/akash_saini_resume.pdf"
+          href="/Akash_Saini_Frontend_Developer.pdf"
           download
         >
           Download CV{" "}
